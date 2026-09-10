@@ -11,6 +11,17 @@ function App() {
   console.log(flag);
   flag = false;
 
+  const arr = [1, "s", false];
+
+  const arr2: number[] = [2, 3, 4];
+  const arr3: string[] = ["x"];
+
+  const arrMix: (string | number)[] = [1, "s"];
+
+  const obj = { name: "ali", age: 22, color: "white" };
+
+  const obj2: { name: string; age: number } = { name: "sardar", age: 26 };
+
   return (
     <>
       <h1>Hello, {name}!</h1>
