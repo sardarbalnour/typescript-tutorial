@@ -35,7 +35,7 @@ function App() {
       <p>Counter: {counter}</p>
       <p>Flag: {flag.toString()}</p>
 
-      <Prop name="sardar" age={26} hasPet={true} />
+      {/* <Prop name="sardar" age={26} hasPet={true} /> */}
     </>
   );
 }
