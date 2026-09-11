@@ -1,3 +1,5 @@
+import Prop from "./components/Prop";
+
 type User2 = { name: string; age: number };
 type ArrMix = (string | number)[];
 
@@ -32,6 +34,8 @@ function App() {
       <h1>Hello, {name}!</h1>
       <p>Counter: {counter}</p>
       <p>Flag: {flag.toString()}</p>
+
+      <Prop name="sardar" age={26} hasPet={true} />
     </>
   );
 }
