@@ -9,6 +9,8 @@ function Function() {
     <div>
       <h2>{sum(5, 3)}</h2>
       <Prop name="sardar" age={26} hasPet={true} sum={sum} />
+      <hr />
+      <Prop name="sardar" age={26} hasPet={true} sum={sum} father="John" />
     </div>
   );
 }
