@@ -1,3 +1,4 @@
+import Article from "./components/Article";
 import Prop from "./components/Prop";
 
 type User2 = { name: string; age: number };
@@ -36,6 +37,10 @@ function App() {
       <p>Flag: {flag.toString()}</p>
 
       {/* <Prop name="sardar" age={26} hasPet={true} /> */}
+
+      <Article>
+        <h1>first article title</h1>
+      </Article>
     </>
   );
 }
