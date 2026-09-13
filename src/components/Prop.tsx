@@ -21,3 +21,5 @@ function Prop({ name, age, hasPet, father, sum }: PropData) {
 export default Prop;
 
 // age function chizio return nakone =>void
+
+// type any ro ta jayi ke momkene estefade nakon !
