@@ -1,4 +1,5 @@
 import { useState } from "react";
+import User from "./User";
 
 type StateType = {
   name: string;
@@ -7,8 +8,8 @@ type StateType = {
 
 function State() {
   const [state, setState] = useState<StateType | null>(null);
-  // null baraye vaqtie ke hanoz api call nashode va chizi nadarim 
-  // alamat haye soal ham toye optional chaining estefade shode ke age state null bood 
+  // null baraye vaqtie ke hanoz api call nashode va chizi nadarim
+  // alamat haye soal ham toye optional chaining estefade shode ke age state null bood
   // error nadahad va faghat undefined return konad
 
   return (
@@ -19,6 +20,8 @@ function State() {
       <button type="button" onClick={() => setState({ name: "John", age: 30 })}>
         Set state
       </button>
+
+      <User value={state} setState={setState} />
     </div>
   );
 }
