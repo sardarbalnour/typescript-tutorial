@@ -3,10 +3,19 @@ type StateType = {
   age: number;
 };
 
-type UserProps = {
+interface UserProps {
   value: StateType | null;
   setState: React.Dispatch<React.SetStateAction<StateType | null>>;
-};
+}
+// interface mamolan baraye type haye objecti estefade mishe
+//  ke chizi ro return mikone va faghat yek object ro return mikone
+
+// type UserProps = {
+//   value: StateType | null;
+//   setState: React.Dispatch<React.SetStateAction<StateType | null>>;
+// };
+
+// type va interface har do baraye type haye objecti estefade mishe va faghat syntaxeshon fargh dare
 
 function User({ value, setState }: UserProps) {
   return (
