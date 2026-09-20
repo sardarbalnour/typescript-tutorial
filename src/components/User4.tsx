@@ -5,7 +5,8 @@ function User4() {
   };
 
   const changeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-    console.log(e.target.value);};
+    console.log(e.target.value);
+  };
 
   return (
     <div>
@@ -17,3 +18,8 @@ function User4() {
 }
 
 export default User4;
+
+// React.MouseEvent<HTMLButtonElement, MouseEvent> is a type that represents
+// the event object for a mouse click event on a button element in React.
+// It provides information about the mouse event, such as the target element,
+// mouse coordinates, and other properties related to the event.
