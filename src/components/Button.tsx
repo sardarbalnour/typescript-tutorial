@@ -10,10 +10,19 @@ import type { ComponentProps } from "react";
 
 type Button = ComponentProps<"button"> & {
   buttonTitle?: string;
+  style: React.CSSProperties;
 };
 
-function Button({ type, buttonTitle }: Button) {
-  return <button type={type}>{buttonTitle || "click"}</button>;
+function Button({ type, buttonTitle, style }: Button) {
+  return (
+    <button style={style} type={type}>
+      {buttonTitle || "click"}
+    </button>
+  );
 }
 
 export default Button;
+
+// React.CSSProperties is a type that represents the inline styles for a React element.
+// It is used to define the style prop of the Button component,
+// allowing users to pass custom styles to the button.

@@ -11,7 +11,11 @@ createRoot(document.getElementById("root")!).render(
     <App />
     <Function />
     <State />
-    <Button type="button" buttonTitle="Click Me" />
+    <Button
+      style={{ color: "red", padding: "6px 12px", backgroundColor: "black" }}
+      type="button"
+      buttonTitle="Click Me"
+    />
     <User4 />
   </StrictMode>
 );
